@@ -1,3 +1,7 @@
+body table, ul, p {
+    font-size: 20px;
+}
+
 .twitter_color {
     color: #1da1f2;
 }
