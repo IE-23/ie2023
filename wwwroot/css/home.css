@@ -1,0 +1,38 @@
+.twitter_color {
+    color: #1da1f2;
+}
+
+.facebook_color {
+    color: #3b5998;
+}
+
+.linkedin_color {
+    color: #0177b5;
+}
+
+.purple_color {
+    color: #330191;
+}
+
+.grey_color {
+    color: #757575;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
