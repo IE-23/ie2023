@@ -1,529 +1,622 @@
-
-
 <!DOCTYPE html>
-    
+
 <html lang="en">
 
-    <head>
-        <Title>IE2023 - Workshops</Title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <link type="text/css" rel="stylesheet" href="wwwroot/lib/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
-        <link type="text/css" rel="stylesheet" href="wwwroot/lib/fontawesome-free-6.2.1-web/css/all.min.css" />
-        <link type="text/css" rel="stylesheet" href="wwwroot/css/home.css" />
+<head>
+    <Title>IE2023 - Workshops</Title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link type="text/css" rel="stylesheet" href="wwwroot/lib/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="wwwroot/lib/fontawesome-free-6.2.1-web/css/all.min.css" />
+    <link type="text/css" rel="stylesheet" href="wwwroot/css/home.css" />
 
-        <script type="text/javascript" src="wwwroot/lib/jquery-3.6.3.js"></script>
-        <script type="text/javascript" src="wwwroot/lib/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="wwwroot/lib/fontawesome-free-6.2.1-web/js/all.min.js"></script>
-    </head>
+    <script type="text/javascript" src="wwwroot/lib/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="wwwroot/lib/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="wwwroot/lib/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="wwwroot/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="wwwroot/favicon/favicon-16x16.png">
+    <link rel="manifest" href="wwwroot/favicon/site.webmanifest">
+</head>
 
-    <body>
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand fs-3 text-primary" href="index.html">&nbspIE2023</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="px-5 collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conference</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="awards.html">Awards</a><a class="dropdown-item" href="keynotes.html">Keynotes</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conference</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"
+                            href="awards.html">Awards</a><a class="dropdown-item" href="keynotes.html">Keynotes</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call for Papers</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"
+                            href="CFP.html">CFP</a><a class="dropdown-item" href="guidelines.html">Submission
+                            Guidelines</a><a class="dropdown-item" href="papers.html">Call for Papers</a><a
+                            class="dropdown-item" href="shortpapers.html">Call for Short Papers</a><a
+                            class="dropdown-item" href="demo.html">Call for Demos and Videos</a><a class="dropdown-item"
+                            href="doccol.html">Call for Doctoral Colloquium</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Workshops & Tutorials</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"
+                            href="workshops.html">Workshops</a><a class="dropdown-item"
+                            href="tutorials.html">Tutorials</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committees</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"
+                            href="organisingcommittee.html">Organising Committees</a><a class="dropdown-item"
+                            href="programcommittee.html">Program Committee</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="spi.html">Special Journal Issues</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="info.html">Industrial Forum</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="aboutmru.html">About Mauritius</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="importantd.html">Important Dates</a>
+                </li>
+            </ul>
         </div>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call for Papers</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="CFP.html">CFP</a><a class="dropdown-item" href="guidelines.html">Submission Guidelines</a><a class="dropdown-item" href="papers.html">Call for Papers</a><a class="dropdown-item" href="shortpapers.html">Call for Short Papers</a><a class="dropdown-item" href="demo.html">Call for Demos and Videos</a><a class="dropdown-item" href="doccol.html">Call for Doctoral Colloquium</a>
+    </nav>
+    <div class="d-flex justify-content-center">
+        Follow IE
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+        <div class="p-2">
+            <a href="https://twitter.com/ie_forum"><i class="fa-brands fa-square-twitter fa-2xl twitter_color"></i></a>
+            <a href="https://www.facebook.com/IntelligentEnvironments/"><i
+                    class="fa-brands fa-square-facebook fa-2xl facebook_color"></i></a>
+            <a href="https://www.linkedin.com/groups/2578102/"><i
+                    class="fa-brands fa-linkedin fa-2xl linkedin_color"></i></a>
         </div>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Workshops & Tutorials</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="workshops.html">Workshops</a><a class="dropdown-item" href="tutorials.html">Tutorials</a>
+    </div>
+    <div class="mx-sm-5 px-5 d-flex">
+        <h1>Workshops</h1>
+    </div>
+
+    <div class="mx-sm-5 px-5 d-flex justify-content-center">
+        <img src="wwwroot/files/flic_beach.png" class="img-fluid">
+    </div>
+
+    <div class="mx-sm-5 px-5">
+        <p>
+            Intelligent Environments (IE) refer to physical spaces in which IT and other pervasive computing technology
+            are
+            woven and used to achieve specific goals for the user, the environment or both. IEs have the ultimate
+            objective
+            of enriching user experience, better managing and increasing user awareness of that environment.
+        </p>
+        <p>
+            As in previous editions of the Intelligent Environments conference, a number of workshops will complement
+            the
+            main conference program. Papers accepted in any of the workshops will be published in the proceedings of the
+            event, which will be an open access volume in the Book Series on Ambient Intelligence and Smart Environments
+            Series (IOS Press). As of 2015, the Workshops Proceedings published by this Book Series are indexed in the
+            Conference Proceedings Citation Index – Science (CPCI-S) by Thomson Reuters.
+        </p>
+        <p>
+            The IE2023 workshops will be held within two days during the conference. Half-day, full-day and even two-day
+            workshops are possible depending on the number of participants.
+        </p>
+    </div>
+
+    <div class="mx-sm-5 px-5 form-group">
+        <hr>
+    </div>
+
+    <div class="mx-sm-5 px-5">
+        <h3>Confirmed Workshops</h3>
+        <p>3rd International Workshop on Self-Learning in Intelligent Environments (SeLIE 2023)</p>
+        <p>12th International Workshop on Intelligent Environments Supporting Healthcare and Well-being (WISHWell 2023)
+        </p>
+        <p>12th International Workshop on the Reliability of Intelligent Environments (WoRIE 2023)</p>
+        <p>2nd International Workshop on Edge AI for Smart Agriculture (EAISA 2023)</p>
+        <p>3rd International Workshop on Artificial Intelligence and Machine Learning for Emerging Topics (ALLEGET 2023)
+        </p>
+        <p>5th International Workshop on Legal Issues in Intelligent Environments (LIIE 2023)</p>
+        <p>1st International Workshop on Empathic Artificial Intelligence for Placemaking</p>
+    </div>
+
+    <div class="mx-sm-5 px-5 form-group">
+        <hr>
+    </div>
+
+    <div id="accordion" class="mx-sm-5 mt-4 mb-4">
+        <div class="card mx-5">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        5<sup>th</sup> International Workshop on Legal Issues in Intelligent Environments (LIIE 2023)
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                <div class="card-body mx-sm-5">
+                    <h3 class="purple_color"><i>5<sup>th</sup> International Workshop on Legal Issues in Intelligent
+                            Environments (LIIE 2023)</i></h3>
+
+                    <p class="grey_color"><b>Workshop Chairs:</b></p>
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Pedro Miguel Freitas<br></b>Universidade Católica Portuguesa, Portugal</p>
+                                <p><b>Ugo Pagallo<br></b>University of Torino, Italy</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Massimo Durante<br></b>University of Torino, Italy</p>
+                                <p><b>Paulo Novais<br></b>University of Minho, Portugal</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <p><b>Link to Website:<br></b><a
+                            href="https://liie2023.weebly.com/">https://liie2023.weebly.com</a>/
+                    </p>
+
+                    <p class="grey_color"><b>Overview:</b></p>
+                    <p>Self-learning systems are artificial agents able to acquire and renew knowledge over time without
+                        hard coding. These are adaptive systems whose functions improve by a learning process based
+                        -typically- on the method of trial and error. A self-learning system initially interacts with
+                        its
+                        users or surrounding environment by attempting and observing the changes produced by its
+                        actions.
+                        This workshop will focus on the design, implementation and exploitation of self-learning
+                        features
+                        within an Intelligent Environment or some of its components. The workshop will represent an
+                        opportunity for academia and industry to debate the state-of-the-art challenges and open issues.
+                    </p>
+                </div>
+            </div>
         </div>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committees</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="organisingcommittee.html">Organising Committees</a><a class="dropdown-item" href="programcommittee.html">Program Committee</a>
+        <div class="card mx-5">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        3<sup>rd</sup> International Workshop on Self-Learning in Intelligent Environments (SeLIE 2023)
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                <div class="card-body mx-sm-5">
+                    <h3 class="purple_color"><i>3<sup>rd</sup> International Workshop on Self-Learning in Intelligent
+                            Environments (SeLIE 2023)</i></h3>
+
+                    <p class="grey_color"><b>Workshop Chairs:</b></p>
+
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Antonio Coronato<br></b>Università Giustino Fortunato - Benevento Italy</p>
+                                <p><b>Patrizia Ribino<br></b>Institute for high performance computing and networking
+                                    (ICAR-CNR) Italy
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Muddasar Naeem<br></b>Università Giustino Fortunato - Benevento Italy</p>
+                                <p><b>Massimo Esposito<br></b>Institute for high performance computing and networking
+                                    (ICAR-CNR) Italy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><b>Link to Website:<br></b><a
+                            href="https://selie23.na.icar.cnr.it/">https://selie23.na.icar.cnr.it</a>/</p>
+
+                    <p class="grey_color"><b>Overview:</b></p>
+                    <p>Intelligent environments are without a doubt a great feat of technology, one of many that
+                        characterize the society of information and technology we now experience. Despite bringing
+                        recognizable advantages to the fulfilment of human needs by adapting the ecosystem around human
+                        intentionalities and activities, intelligent environments do bring about difficult challenges to
+                        the
+                        creation of normative frameworks that regulate their usage. Drafting and applying legal norms
+                        that
+                        are suitable to ever-evolving technologies means that, on one hand, not only legal
+                        practitioners,
+                        legislators and scholars must be prepared to closely monitor technological advances to
+                        adequately
+                        prepare and apply suitable legal norms, and, on the other hand, do so in a pace that is
+                        traditionally not common in law. This workshop is intended to create a forum of discussion
+                        between
+                        those who share a common interest in this area of intersection between technology (intelligent
+                        environments) and law.</p>
+                </div>
+            </div>
         </div>
-    </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="spi.html">Special Journal Issues</a>
-    </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="info.html">Industrial Forum</a>
-    </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="registration.html">Registration</a>
-    </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="aboutmru.html">About Mauritius</a>
-    </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="importantd.html">Important Dates</a>
-    </li>
+        <div class="card mx-5">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        3<sup>rd</sup> International Workshop on Artificial Intelligence and Machine Learning for
+                        Emerging
+                        Topics (ALLEGET 2023)
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                <div class="card-body mx-sm-5">
+                    <h3 class="purple_color"><i>3<sup>rd</sup> International Workshop on Artificial Intelligence and
+                            Machine
+                            Learning for Emerging Topics (ALLEGET 2023)</i></h3>
+
+                    <p class="grey_color"><b>Workshop Chairs:</b></p>
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Andrés Bueno-Crespo<br></b>Universidad Católica de Murcia (UCAM)</p>
+                                <p><b>Raquel Martínez-España<br></b>Universidad de Murcia (UM)</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Fernando Terroso<br></b>Universidad Católica de Murcia (UCAM)</p>
+                                <p><b>Andrés Muñoz<br></b>Universidad de Cadiz (UCA)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><b>Link to Website:<br></b><a href="http://www.alleget.site/">http://www.alleget.site</a>/</p>
+
+                    <p class="grey_color"><b>Overview:</b></p>
+                    <p>Every day, more information moves through social networks. Users publish content in the form of
+                        text,
+                        images, video, audio or a combination of them to express their opinions, relate facts that are
+                        happening at that moment or show situations of interest. Also, this content is published using
+                        mobile devices that are commonly equipped with different outdoor and indoor positioning
+                        technologies
+                        (e.g., GPS, RFID or Bluetooth) that allows to attach certain geo-tags to the users' posts as
+                        meta-data. This opens a new line of research related to the analysis and interpretation of the
+                        multi-modal information flowing through online social networks. However, the fusion, integration
+                        and
+                        analysis of this heterogeneous data poses serious challenges so as to come up to truly effective
+                        services leveraging social-media content in fields like predictive analytics or event detection.
+                    </p>
+                    <p>This workshop focuses on intelligent solutions for social-media processing that considers such an
+                        inherent heterogeneity. This way, mechanisms able to extract knowledge from multimedia data
+                        posted
+                        by users in online social media platforms or the fusion of different types of data coming from
+                        these
+                        feeds would be of special interest.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-5">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                        1<sup>st</sup> International Workshop on Empathic Artificial Intelligence for Placemaking
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                <div class="card-body mx-sm-5">
+                    <h3 class="purple_color"><i>1<sup>st</sup> International Workshop on Empathic Artificial
+                            Intelligence
+                            for Placemaking</i></h3>
+
+                    <p class="grey_color"><b>Workshop Chairs:</b></p>
+
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Prof. Dr.ir. Masi Mohammadi<br></b>Chair Smart Architectural Technologies,
+                                    Eindhoven
+                                    University of
+                                    Technology, the Netherlands</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Prof. Dr. Somaya Ben Allouch<br></b>Human-System Interaction for Health &
+                                    Wellbeing,
+                                    University of
+                                    Amsterdam & Amsterdam University of Applied Sciences, the Netherlands</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><b>Link to Website:<br></b><a
+                            href="https://deelacademy.nl/kalender/international-workshop-on-artificial-intelligence-for-placemaking/">https://deelacademy.nl/kalender/international-workshop-on-artificial-intelligence-for-placemaking</a>/
+                    </p>
+
+                    <p class="grey_color"><b>Overview:</b></p>
+                    <p>Our modern society faces multiple challenges, including an increased number of older people, an
+                        increasing social gap and (health) differences between people of diverse socioeconomic
+                        backgrounds,
+                        a shortage of qualified and specialised professionals, and loneliness. These challenges affect
+                        our
+                        (perceived) health and life expectancy and make great demands on the self-, and collaborative
+                        management.</p>
+                    <p>A growing number of studies reveal how the living environment can preserve and promote our social
+                        connections, health and (perceived) quality of life. Having some form of 'community' and social
+                        interaction in the neighbourhood is a precondition for creating informal networks. Especially
+                        for
+                        people in vulnerable situations, the (design of the) outdoor space is decisive for establishing
+                        social cohesion.</p>
+                    <p>The concept of 'public familiarity', which is used to indicate the relationship between the
+                        living
+                        environment and social interaction, potentially enhances good neighbourliness. It refers to
+                        short,
+                        repeated encounters between neighbours and contributes to feelings of safety and social
+                        acceptance.
+                        Fourth places, such as squares or parks, that function as the "living room" of a neighbourhood
+                        are
+                        essential in this regard.</p>
+                    <p>Artificial intelligence solutions and art are also rich in interaction and are more often used to
+                        promote social interaction in these 'living rooms'. In doing so, public space not only
+                        'facilitates'
+                        social interaction but also 'stimulates' it.</p>
+                    <p>Ethical issues of these AI-based places should certainly not be overlooked. However, some
+                        researchers argue that nudging is manipulative as psychological processes (such as priming and
+                        framing) affect people's behaviour unconsciously. Much data on the behaviour and subtle
+                        behavioural
+                        influenced by AI-interventions are collected. This knowledge brings responsibility for finding
+                        out
+                        whether the impact is desirable.</p>
+                    <p>Therefore, this international workshop sets out to explore if and how smart technologies can turn
+                        semi-public spaces into resilient communities. More specifically, we focus on how (semi-)public
+                        spaces can contribute to encountering and strengthening social connections between neighbourhood
+                        residents. The aim is to explore and understand factors that influence the design of AI-based
+                        environments where human scale and ethical values are integrated.</p>
+                    <p>Ensuring the social embedding and sustainable use of these solutions require the involvement of
+                        all
+                        stakeholders, particularly citizens, in the design process. The workshop thereby explores the
+                        dynamics between AI, artwork, place-making, and social health. It investigates the design and
+                        participation process, ethical matters, as well as the validity and (socio-economic and
+                        emotional)
+                        impact of these AI-based solutions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-5">
+            <div class="card-header" id="headingSeven">
+                <h5 class="mb-0">
+                    <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                        2<sup>nd</sup> International Workshop on Edge AI for Smart Agriculture (EAISA 2023)
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
+                <div class="card-body mx-sm-5">
+                    <h3 class="purple_color"><i>2<sup>nd</sup> International Workshop on Edge AI for Smart Agriculture
+                            (EAISA 2023)</i></h3>
+
+                    <p class="grey_color"><b>Workshop Chairs:</b></p>
+
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Luiz Angelo Steffenel<br></b>Université de Reims Champagne Ardenne, France</p>
+                                <p><b>Nathalie Gaveau<br></b>Université de Reims Champagne Ardenne, France</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Lucas Mohimont<br></b>Université de Reims Champagne Ardenne, France</p>
+                                <p><b>Marine Rondeau<br></b>Champagne Vranken-Pommery, France</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><b>Link to Website:<br></b><a
+                            href="https://sites.google.com/view/eaisa2023/home/">https://sites.google.com/view/eaisa2023/home</a>/
+                    </p>
+
+                    <p class="grey_color"><b>Overview:</b></p>
+                    <p>The goal of the 2st Workshop on Edge AI for Smart Agriculture (EAISA) is to provide a forum for
+                        scientists, engineers and researchers to discuss and exchange novel ideas, results, experiences
+                        and
+                        work-in-process on aspects related to the use and deployment of Edge Artificial Intelligence for
+                        smart and sustainable agriculture.</p>
+                    <p>
+                        While intelligent systems for smart agriculture (and smart cities, in a wider view) are becoming
+                        widely available, they are mostly based on remote facilities for analysis and decision-making.
+                        Bringing AI to the edge is a way to cope with the many constraints such as limited communication
+                        capabilities and power supply. This also brings new challenges, such as energy efficiency and
+                        adapting AI models to low-capacity processors.</p>
+                    <p>
+                        Attendees will appreciate and benefit from multidisciplinary exchanges on these hot topics.
+                        Through
+                        this workshop, we expect people from various communities to meet and exchange during the
+                        meetings
+                        and specific slots of time will be dedicated to open discussions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-5">
+            <div class="card-header" id="headingEight">
+                <h5 class="mb-0">
+                    <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                        12<sup>th</sup> International Workshop on Intelligent Environments Supporting Healthcare and
+                        Well-being (WISHWell 2023)
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-bs-parent="#accordion">
+                <div class="card-body mx-sm-5">
+                    <h3 class="purple_color"><i>12<sup>th</sup> International Workshop on Intelligent Environments
+                            Supporting Healthcare and Well-being (WISHWell 2023)</i></h3>
+
+                    <p class="grey_color"><b>Workshop Chairs:</b></p>
+
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Juan Carlos Augusto<br></b>Head of Research Group on the Development of
+                                    Intelligent
+                                    Environments,<br>Department of Computer Science, Middlesex University, London.</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Anton Gradišek<br></b>Institut Jožef Stefan, Slovenia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><b>Link to Website:<br></b><a
+                            href="https://jcaugusto.wixsite.com/wishwell/">https://jcaugusto.wixsite.com/wishwell</a>/
+                    </p>
+
+                    <p class="grey_color"><b>Overview:</b></p>
+                    <p>The workshop will bring together researchers from both industry and academia from the various
+                        disciplines to contribute to this new edition of the International Workshop on Intelligent
+                        Environments Supporting Healthcare and Well-Being. This event previously joined forces with the
+                        International Workshop “PervaSense – Situation recognition and medical data analysis in
+                        Pervasive
+                        Health environments” and the workshop on “Smart Healthcare and Healing Environments”. Healthcare
+                        environments (within the hospital and the home) are extremely complex and challenging to manage
+                        from
+                        an IT and IS perspective, as they are required to cope with an assortment of patient conditions
+                        under various circumstances with a number of resource constraints. Pervasive healthcare
+                        technologies
+                        seek to respond to a variety of these pressures by integrating them within existing healthcare
+                        services. It is essential that intelligent pervasive healthcare solutions are developed and
+                        correctly integrated to assist health care professionals in delivering high levels of patient
+                        care.
+                        It is equally important that these pervasive solutions are used to empower patients and
+                        relatives
+                        for self-care and management of their health to provide seamless access for health care
+                        services.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-5">
+            <div class="card-header" id="headingNine">
+                <h5 class="mb-0">
+                    <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                        12<sup>th</sup> International Workshop on the Reliability of Intelligent Environments (WoRIE
+                        2023)
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-bs-parent="#accordion">
+                <div class="card-body mx-sm-5">
+                    <h3 class="purple_color"><i>12<sup>th</sup> International Workshop on the Reliability of Intelligent
+                            Environments (WoRIE 2023)</i></h3>
+
+                    <p class="grey_color"><b>Workshop Chairs:</b></p>
+
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Carlos Rodriguez-Dominguez<br></b>University of Granada, Spain</p>
+                                <p><b>Miguel J. Hornos<br></b>University of Granada, Spain</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p><b>Aditya Santokhee<br></b>Middlesex University, Mauritius Branch</p>
+                                <p><b>Juan Carlos Augusto<br></b>Middlesex University, U.K.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><b>Link to Website:<br></b><a
+                            href="https://www.ugr.es/~worie/2023/">https://www.ugr.es/~worie/2023</a>/</p>
+
+                    <p class="grey_color"><b>Overview:</b></p>
+                    <p>Intelligent Environments (IE) is rising as one of the technical fields with the highest potential
+                        to make an impact in daily human life during the near future. Developments in this area are
+                        achieved by a complex juxtaposition of complex technical fields. Software is related to the
+                        architecture of a building, sensors, a network for data transportation, and different levels of
+                        users. Many of these elements are error prone, software is notoriously difficult and even
+                        companies like NASA, Microsoft, Intel, BMW, which can afford powerful teams of experienced
+                        development teams have paid with lives, economic losses and reputation missing to detect
+                        software bugs within their products. Sensors are often unreliable, networks are sometimes
+                        unstable and users can put systems to the test in circumstances that were not initially
+                        foreseen. Developing this type of systems is therefore complex and given that some applications
+                        will be given the tremendous responsibility to take care of humans. Think for example on how
+                        much interest there is on the development of systems to support independent living. These
+                        systems are intended to give peace of mind to elderly people and their relatives trusting that
+                        the system will be able to do many things for them including safety related issues like
+                        detecting whether the occupant of the house has fallen or is unwell in some way. Other examples
+                        are unmanned cars and other autonomous systems which are supposed to perform tasks for us which
+                        can have disastrous consequences should something go wrong.</p>
+                    <p>Our community should develop appropriate standards and specific methodologies to ensure we do our
+                        outmost to deliver safe systems given the current state of the art. Given the specific blend of
+                        components in our area of development we cannot just transfer developments in other areas
+                        (although of course they should be taken into account to inform the process). This event will
+                        aim to bring together developers and researchers to focus on all aspects of the development
+                        process that can contribute to make Intelligent Environments and related systems safer and more
+                        secure, as well as to provide methodologies that can increase the confidence in these
+                        developments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-sm-5 px-5 form-group">
+        <hr>
+    </div>
+
+    <div class="mx-sm-5 px-5">
+        <p><strong>Support to workshop organizers</p></strong>
+
+        <p>Workshop organizers will be provided with up to three free conference registrations depending on the number
+            of
+            participants, which can be used for workshop chairs and/or keynote speakers. IE2023 will also manage the
+            publication of workshop proceedings.</p>
+
+        <p><strong>Responsibilities of workshop organizers</p></strong>
+
+        <p>Workshop organizers have the following responsibilities:</p>
+
+        <ul>
+            <li>Maintaining their workshop website</li>
+            <li>Planning and coordinating the workshop programme</li>
+            <li>Arranging a potential keynote speaker</li>
+            <li>Calling for papers</li>
+            <li>Reviewing and accepting papers</li>
+            <li>Ensuring that the papers adhere to the prescribed format</li>
+        </ul>
+
+        <p>Notes:</p>
+
+        <ul>
+            <li>A minimum of four registered papers are required, otherwise the workshop is cancelled.</li>
+            <li>It is recommended that workshop co-chairs should not co-author papers in their own workshop.</li>
+        </ul>
+
+        <p><strong>General Workshop Chairs</p></strong>
+
+        <ul>
+            <li><strong>Massimo Mecella</strong>, Sapienza University of Rome, <a
+                    href="mailto:mecella@diag.uniroma1.it">mecella[at]diag.uniroma1.it</a></li>
+            <li><strong>Somaya Ben Allouch</strong>, Hogeschool van Amsterdam, <a
+                    href="mailto:s.ben.allouch@hva.nl">s.ben.allouch[at]hva.nl</a></li>
+            <li><strong>Girish Bekaroo</strong>, Middlesex University Mauritius, <a
+                    href="mailto:g.bekaroo@mdx.ac.mu">g.bekaroo[at]mdx.ac.mu</a></li>
         </ul>
     </div>
-</nav>
-<div class="d-flex justify-content-center">
-    Follow IE
-</div>
-<div class="d-flex flex-row justify-content-center">
-<div class="p-2">
-    <a href="https://twitter.com/ie_forum"><i class="fa-brands fa-square-twitter fa-2xl twitter_color"></i></a>
-    <a href="https://www.facebook.com/IntelligentEnvironments/"><i class="fa-brands fa-square-facebook fa-2xl facebook_color"></i></a>
-    <a href="https://www.linkedin.com/groups/2578102/"><i class="fa-brands fa-linkedin fa-2xl linkedin_color"></i></a>
-</div>
-</div>
-<div class="mx-sm-5 px-5 d-flex">
-<h1>Workshops</h1>
-</div>
-
-<div class="mx-sm-5 px-5 d-flex justify-content-center">
-<img src="wwwroot/files/flic_beach.png" class="img-fluid">
-</div>
-
-<div class="mx-sm-5 px-5">
-<p>
-    Intelligent Environments (IE) refer to physical spaces in which IT and other pervasive computing technology are
-    woven and used to achieve specific goals for the user, the environment or both. IEs have the ultimate objective
-    of enriching user experience, better managing and increasing user awareness of that environment.
-</p>
-<p>
-    As in previous editions of the Intelligent Environments conference, a number of workshops will complement the
-    main conference program. Papers accepted in any of the workshops will be published in the proceedings of the
-    event, which will be an open access volume in the Book Series on Ambient Intelligence and Smart Environments
-    Series (IOS Press). As of 2015, the Workshops Proceedings published by this Book Series are indexed in the
-    Conference Proceedings Citation Index – Science (CPCI-S) by Thomson Reuters.
-</p>
-<p>
-    The IE2023 workshops will be held within two days during the conference. Half-day, full-day and even two-day
-    workshops are possible depending on the number of participants.
-</p>
-</div>
-
-<div class="mx-sm-5 px-5 form-group">
-<hr>
-</div>
-
-<div class="mx-sm-5 px-5">
-<h3>Confirmed Workshops</h3>
-<p>3rd International Workshop on Self-Learning in Intelligent Environments (SeLIE 2023)</p>
-<p>12th International Workshop on Intelligent Environments Supporting Healthcare and Well-being (WISHWell 2023)</p>
-<p>12th International Workshop on the Reliability of Intelligent Environments (WoRIE 2023)</p>
-<p>2nd International Workshop on Edge AI for Smart Agriculture (EAISA 2023)</p>
-<p>3rd International Workshop on Artificial Intelligence and Machine Learning for Emerging Topics (ALLEGET 2023)</p>
-<p>5th International Workshop on Legal Issues in Intelligent Environments (LIIE 2023)</p>
-<p>1st International Workshop on Empathic Artificial Intelligence for Placemaking</p>
-</div>
-
-<div class="mx-sm-5 px-5 form-group">
-<hr>
-</div>
-
-<div id="accordion" class="mx-sm-5 mt-4 mb-4">
-<div class="card mx-5">
-    <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-            <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                5<sup>th</sup> International Workshop on Legal Issues in Intelligent Environments (LIIE 2023)
-            </button>
-        </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
-        <div class="card-body mx-sm-5">
-            <h3 class="purple_color"><i>5<sup>th</sup> International Workshop on Legal Issues in Intelligent
-                    Environments (LIIE 2023)</i></h3>
-
-            <p class="grey_color"><b>Workshop Chairs:</b></p>
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Pedro Miguel Freitas<br></b>Universidade Católica Portuguesa, Portugal</p>
-                        <p><b>Ugo Pagallo<br></b>University of Torino, Italy</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Massimo Durante<br></b>University of Torino, Italy</p>
-                        <p><b>Paulo Novais<br></b>University of Minho, Portugal</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <p><b>Link to Website:<br></b><a href="https://liie2023.weebly.com/">https://liie2023.weebly.com</a>/
-            </p>
-
-            <p class="grey_color"><b>Overview:</b></p>
-            <p>Self-learning systems are artificial agents able to acquire and renew knowledge over time without
-                hard coding. These are adaptive systems whose functions improve by a learning process based
-                -typically- on the method of trial and error. A self-learning system initially interacts with its
-                users or surrounding environment by attempting and observing the changes produced by its actions.
-                This workshop will focus on the design, implementation and exploitation of self-learning features
-                within an Intelligent Environment or some of its components. The workshop will represent an
-                opportunity for academia and industry to debate the state-of-the-art challenges and open issues.</p>
-        </div>
-    </div>
-</div>
-<div class="card mx-5">
-    <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-            <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                aria-expanded="true" aria-controls="collapseTwo">
-                3<sup>rd</sup> International Workshop on Self-Learning in Intelligent Environments (SeLIE 2023)
-            </button>
-        </h5>
-    </div>
-
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-        <div class="card-body mx-sm-5">
-            <h3 class="purple_color"><i>3<sup>rd</sup> International Workshop on Self-Learning in Intelligent
-                    Environments (SeLIE 2023)</i></h3>
-
-            <p class="grey_color"><b>Workshop Chairs:</b></p>
-
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Antonio Coronato<br></b>Università Giustino Fortunato - Benevento Italy</p>
-                        <p><b>Patrizia Ribino<br></b>Institute for high performance computing and networking
-                            (ICAR-CNR) Italy
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Muddasar Naeem<br></b>Università Giustino Fortunato - Benevento Italy</p>
-                        <p><b>Massimo Esposito<br></b>Institute for high performance computing and networking
-                            (ICAR-CNR) Italy
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <p><b>Link to Website:<br></b><a
-                    href="https://selie23.na.icar.cnr.it/">https://selie23.na.icar.cnr.it</a>/</p>
-
-            <p class="grey_color"><b>Overview:</b></p>
-            <p>Intelligent environments are without a doubt a great feat of technology, one of many that
-                characterize the society of information and technology we now experience. Despite bringing
-                recognizable advantages to the fulfilment of human needs by adapting the ecosystem around human
-                intentionalities and activities, intelligent environments do bring about difficult challenges to the
-                creation of normative frameworks that regulate their usage. Drafting and applying legal norms that
-                are suitable to ever-evolving technologies means that, on one hand, not only legal practitioners,
-                legislators and scholars must be prepared to closely monitor technological advances to adequately
-                prepare and apply suitable legal norms, and, on the other hand, do so in a pace that is
-                traditionally not common in law. This workshop is intended to create a forum of discussion between
-                those who share a common interest in this area of intersection between technology (intelligent
-                environments) and law.</p>
-        </div>
-    </div>
-</div>
-<div class="card mx-5">
-    <div class="card-header" id="headingFive">
-        <h5 class="mb-0">
-            <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                aria-expanded="true" aria-controls="collapseFive">
-                3<sup>rd</sup> International Workshop on Artificial Intelligence and Machine Learning for Emerging
-                Topics (ALLEGET 2023)
-            </button>
-        </h5>
-    </div>
-
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
-        <div class="card-body mx-sm-5">
-            <h3 class="purple_color"><i>3<sup>rd</sup> International Workshop on Artificial Intelligence and Machine
-                    Learning for Emerging Topics (ALLEGET 2023)</i></h3>
-
-            <p class="grey_color"><b>Workshop Chairs:</b></p>
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Andrés Bueno-Crespo<br></b>Universidad Católica de Murcia (UCAM)</p>
-                        <p><b>Raquel Martínez-España<br></b>Universidad de Murcia (UM)</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Fernando Terroso<br></b>Universidad Católica de Murcia (UCAM)</p>
-                        <p><b>Andrés Muñoz<br></b>Universidad de Cadiz (UCA)</p>
-                    </div>
-                </div>
-            </div>
-
-            <p><b>Link to Website:<br></b><a href="http://www.alleget.site/">http://www.alleget.site</a>/</p>
-
-            <p class="grey_color"><b>Overview:</b></p>
-            <p>Every day, more information moves through social networks. Users publish content in the form of text,
-                images, video, audio or a combination of them to express their opinions, relate facts that are
-                happening at that moment or show situations of interest. Also, this content is published using
-                mobile devices that are commonly equipped with different outdoor and indoor positioning technologies
-                (e.g., GPS, RFID or Bluetooth) that allows to attach certain geo-tags to the users' posts as
-                meta-data. This opens a new line of research related to the analysis and interpretation of the
-                multi-modal information flowing through online social networks. However, the fusion, integration and
-                analysis of this heterogeneous data poses serious challenges so as to come up to truly effective
-                services leveraging social-media content in fields like predictive analytics or event detection.</p>
-            <p>This workshop focuses on intelligent solutions for social-media processing that considers such an
-                inherent heterogeneity. This way, mechanisms able to extract knowledge from multimedia data posted
-                by users in online social media platforms or the fusion of different types of data coming from these
-                feeds would be of special interest.</p>
-        </div>
-    </div>
-</div>
-<div class="card mx-5">
-    <div class="card-header" id="headingSix">
-        <h5 class="mb-0">
-            <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                aria-expanded="true" aria-controls="collapseSix">
-                1<sup>st</sup> International Workshop on Empathic Artificial Intelligence for Placemaking
-            </button>
-        </h5>
-    </div>
-
-    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
-        <div class="card-body mx-sm-5">
-            <h3 class="purple_color"><i>1<sup>st</sup> International Workshop on Empathic Artificial Intelligence
-                    for Placemaking</i></h3>
-
-            <p class="grey_color"><b>Workshop Chairs:</b></p>
-
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Prof. Dr.ir. Masi Mohammadi<br></b>Chair Smart Architectural Technologies, Eindhoven
-                            University of
-                            Technology, the Netherlands</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Prof. Dr. Somaya Ben Allouch<br></b>Human-System Interaction for Health & Wellbeing,
-                            University of
-                            Amsterdam & Amsterdam University of Applied Sciences, the Netherlands</p>
-                    </div>
-                </div>
-            </div>
-
-            <p><b>Link to Website:<br></b><a
-                    href="https://deelacademy.nl/kalender/international-workshop-on-artificial-intelligence-for-placemaking/">https://deelacademy.nl/kalender/international-workshop-on-artificial-intelligence-for-placemaking</a>/
-            </p>
-
-            <p class="grey_color"><b>Overview:</b></p>
-            <p>Our modern society faces multiple challenges, including an increased number of older people, an
-                increasing social gap and (health) differences between people of diverse socioeconomic backgrounds,
-                a shortage of qualified and specialised professionals, and loneliness. These challenges affect our
-                (perceived) health and life expectancy and make great demands on the self-, and collaborative
-                management.</p>
-            <p>A growing number of studies reveal how the living environment can preserve and promote our social
-                connections, health and (perceived) quality of life. Having some form of 'community' and social
-                interaction in the neighbourhood is a precondition for creating informal networks. Especially for
-                people in vulnerable situations, the (design of the) outdoor space is decisive for establishing
-                social cohesion.</p>
-            <p>The concept of 'public familiarity', which is used to indicate the relationship between the living
-                environment and social interaction, potentially enhances good neighbourliness. It refers to short,
-                repeated encounters between neighbours and contributes to feelings of safety and social acceptance.
-                Fourth places, such as squares or parks, that function as the "living room" of a neighbourhood are
-                essential in this regard.</p>
-            <p>Artificial intelligence solutions and art are also rich in interaction and are more often used to
-                promote social interaction in these 'living rooms'. In doing so, public space not only 'facilitates'
-                social interaction but also 'stimulates' it.</p>
-            <p>Ethical issues of these AI-based places should certainly not be overlooked. However, some
-                researchers argue that nudging is manipulative as psychological processes (such as priming and
-                framing) affect people's behaviour unconsciously. Much data on the behaviour and subtle behavioural
-                influenced by AI-interventions are collected. This knowledge brings responsibility for finding out
-                whether the impact is desirable.</p>
-            <p>Therefore, this international workshop sets out to explore if and how smart technologies can turn
-                semi-public spaces into resilient communities. More specifically, we focus on how (semi-)public
-                spaces can contribute to encountering and strengthening social connections between neighbourhood
-                residents. The aim is to explore and understand factors that influence the design of AI-based
-                environments where human scale and ethical values are integrated.</p>
-            <p>Ensuring the social embedding and sustainable use of these solutions require the involvement of all
-                stakeholders, particularly citizens, in the design process. The workshop thereby explores the
-                dynamics between AI, artwork, place-making, and social health. It investigates the design and
-                participation process, ethical matters, as well as the validity and (socio-economic and emotional)
-                impact of these AI-based solutions.</p>
-        </div>
-    </div>
-</div>
-<div class="card mx-5">
-    <div class="card-header" id="headingSeven">
-        <h5 class="mb-0">
-            <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-                aria-expanded="true" aria-controls="collapseSeven">
-                2<sup>nd</sup> International Workshop on Edge AI for Smart Agriculture (EAISA 2023)
-            </button>
-        </h5>
-    </div>
-
-    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
-        <div class="card-body mx-sm-5">
-            <h3 class="purple_color"><i>2<sup>nd</sup> International Workshop on Edge AI for Smart Agriculture
-                    (EAISA 2023)</i></h3>
-
-            <p class="grey_color"><b>Workshop Chairs:</b></p>
-
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Luiz Angelo Steffenel<br></b>Université de Reims Champagne Ardenne, France</p>
-                        <p><b>Nathalie Gaveau<br></b>Université de Reims Champagne Ardenne, France</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Lucas Mohimont<br></b>Université de Reims Champagne Ardenne, France</p>
-                        <p><b>Marine Rondeau<br></b>Champagne Vranken-Pommery, France</p>
-                    </div>
-                </div>
-            </div>
-
-            <p><b>Link to Website:<br></b><a
-                    href="https://sites.google.com/view/eaisa2023/home/">https://sites.google.com/view/eaisa2023/home</a>/
-            </p>
-
-            <p class="grey_color"><b>Overview:</b></p>
-            <p>The goal of the 2st Workshop on Edge AI for Smart Agriculture (EAISA) is to provide a forum for
-                scientists, engineers and researchers to discuss and exchange novel ideas, results, experiences and
-                work-in-process on aspects related to the use and deployment of Edge Artificial Intelligence for
-                smart and sustainable agriculture.</p>
-            <p>
-                While intelligent systems for smart agriculture (and smart cities, in a wider view) are becoming
-                widely available, they are mostly based on remote facilities for analysis and decision-making.
-                Bringing AI to the edge is a way to cope with the many constraints such as limited communication
-                capabilities and power supply. This also brings new challenges, such as energy efficiency and
-                adapting AI models to low-capacity processors.</p>
-            <p>
-                Attendees will appreciate and benefit from multidisciplinary exchanges on these hot topics. Through
-                this workshop, we expect people from various communities to meet and exchange during the meetings
-                and specific slots of time will be dedicated to open discussions.</p>
-        </div>
-    </div>
-</div>
-<div class="card mx-5">
-    <div class="card-header" id="headingEight">
-        <h5 class="mb-0">
-            <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse" data-bs-target="#collapseEight"
-                aria-expanded="true" aria-controls="collapseEight">
-                12<sup>th</sup> International Workshop on Intelligent Environments Supporting Healthcare and
-                Well-being (WISHWell 2023)
-            </button>
-        </h5>
-    </div>
-
-    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-bs-parent="#accordion">
-        <div class="card-body mx-sm-5">
-            <h3 class="purple_color"><i>12<sup>th</sup> International Workshop on Intelligent Environments
-                    Supporting Healthcare and Well-being (WISHWell 2023)</i></h3>
-
-            <p class="grey_color"><b>Workshop Chairs:</b></p>
-
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Juan Carlos Augusto<br></b>Head of Research Group on the Development of Intelligent
-                            Environments,<br>Department of Computer Science, Middlesex University, London.</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Anton Gradišek<br></b>Institut Jožef Stefan, Slovenia</p>
-                    </div>
-                </div>
-            </div>
-
-            <p><b>Link to Website:<br></b><a
-                    href="https://jcaugusto.wixsite.com/wishwell/">https://jcaugusto.wixsite.com/wishwell</a>/</p>
-
-            <p class="grey_color"><b>Overview:</b></p>
-            <p>The workshop will bring together researchers from both industry and academia from the various
-                disciplines to contribute to this new edition of the International Workshop on Intelligent
-                Environments Supporting Healthcare and Well-Being. This event previously joined forces with the
-                International Workshop “PervaSense – Situation recognition and medical data analysis in Pervasive
-                Health environments” and the workshop on “Smart Healthcare and Healing Environments”. Healthcare
-                environments (within the hospital and the home) are extremely complex and challenging to manage from
-                an IT and IS perspective, as they are required to cope with an assortment of patient conditions
-                under various circumstances with a number of resource constraints. Pervasive healthcare technologies
-                seek to respond to a variety of these pressures by integrating them within existing healthcare
-                services. It is essential that intelligent pervasive healthcare solutions are developed and
-                correctly integrated to assist health care professionals in delivering high levels of patient care.
-                It is equally important that these pervasive solutions are used to empower patients and relatives
-                for self-care and management of their health to provide seamless access for health care services.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="card mx-5">
-    <div class="card-header" id="headingNine">
-        <h5 class="mb-0">
-            <button class="btn btn-light collapsed w-100" data-bs-toggle="collapse" data-bs-target="#collapseNine"
-                aria-expanded="true" aria-controls="collapseNine">
-                12<sup>th</sup> International Workshop on the Reliability of Intelligent Environments (WoRIE 2023)
-            </button>
-        </h5>
-    </div>
-
-    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-bs-parent="#accordion">
-        <div class="card-body mx-sm-5">
-            <h3 class="purple_color"><i>12<sup>th</sup> International Workshop on the Reliability of Intelligent
-                    Environments (WoRIE 2023)</i></h3>
-
-            <p class="grey_color"><b>Workshop Chairs:</b></p>
-
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Carlos Rodriguez-Dominguez<br></b>University of Granada, Spain</p>
-                        <p><b>Miguel J. Hornos<br></b>University of Granada, Spain</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p><b>Aditya Santokhee<br></b>Middlesex University, Mauritius Branch</p>
-                        <p><b>Juan Carlos Augusto<br></b>Middlesex University, U.K.</p>
-                    </div>
-                </div>
-            </div>
-
-            <p><b>Link to Website:<br></b><a
-                    href="https://www.ugr.es/~worie/2023/">https://www.ugr.es/~worie/2023</a>/</p>
-
-            <p class="grey_color"><b>Overview:</b></p>
-            <p>Intelligent Environments (IE) is rising as one of the technical fields with the highest potential to make an impact in daily human life during the near future. Developments in this area are achieved by a complex juxtaposition of complex technical fields. Software is related to the architecture of a building, sensors, a network for data transportation, and different levels of users. Many of these elements are error prone, software is notoriously difficult and even companies like NASA, Microsoft, Intel, BMW, which can afford powerful teams of experienced development teams have paid with lives, economic losses and reputation missing to detect software bugs within their products. Sensors are often unreliable, networks are sometimes unstable and users can put systems to the test in circumstances that were not initially foreseen. Developing this type of systems is therefore complex and given that some applications will be given the tremendous responsibility to take care of humans. Think for example on how much interest there is on the development of systems to support independent living. These systems are intended to give peace of mind to elderly people and their relatives trusting that the system will be able to do many things for them including safety related issues like detecting whether the occupant of the house has fallen or is unwell in some way. Other examples are unmanned cars and other autonomous systems which are supposed to perform tasks for us which can have disastrous consequences should something go wrong.</p><p>Our community should develop appropriate standards and specific methodologies to ensure we do our outmost to deliver safe systems given the current state of the art. Given the specific blend of components in our area of development we cannot just transfer developments in other areas (although of course they should be taken into account to inform the process). This event will aim to bring together developers and researchers to focus on all aspects of the development process that can contribute to make Intelligent Environments and related systems safer and more secure, as well as to provide methodologies that can increase the confidence in these developments.</p>
-        </div>
-    </div>
-</div>
-</div>
-<div class="mx-sm-5 px-5 form-group">
-<hr>
-</div>
-
-<div class="mx-sm-5 px-5">
-<p><strong>Support to workshop organizers</p></strong>
-
-<p>Workshop organizers will be provided with up to three free conference registrations depending on the number
-    of
-    participants, which can be used for workshop chairs and/or keynote speakers. IE2023 will also manage the
-    publication of workshop proceedings.</p>
-
-<p><strong>Responsibilities of workshop organizers</p></strong>
-
-<p>Workshop organizers have the following responsibilities:</p>
-
-<ul>
-    <li>Maintaining their workshop website</li>
-    <li>Planning and coordinating the workshop programme</li>
-    <li>Arranging a potential keynote speaker</li>
-    <li>Calling for papers</li>
-    <li>Reviewing and accepting papers</li>
-    <li>Ensuring that the papers adhere to the prescribed format</li>
-</ul>
-
-<p>Notes:</p>
-
-<ul>
-    <li>A minimum of four registered papers are required, otherwise the workshop is cancelled.</li>
-    <li>It is recommended that workshop co-chairs should not co-author papers in their own workshop.</li>
-</ul>
-
-<p><strong>General Workshop Chairs</p></strong>
-
-<ul>
-    <li><strong>Massimo Mecella</strong>, Sapienza University of Rome, <a
-            href="mailto:mecella@diag.uniroma1.it">mecella[at]diag.uniroma1.it</a></li>
-    <li><strong>Somaya Ben Allouch</strong>, Hogeschool van Amsterdam, <a
-            href="mailto:s.ben.allouch@hva.nl">s.ben.allouch[at]hva.nl</a></li>
-    <li><strong>Girish Bekaroo</strong>, Middlesex University Mauritius, <a
-            href="mailto:g.bekaroo@mdx.ac.mu">g.bekaroo[at]mdx.ac.mu</a></li>
-</ul>
-</div>
 
 
 </body>
@@ -531,16 +624,20 @@
 <footer class="border-top p-2">
     <div class="row w-100">
         <div class="col-xs-6 d-flex justify-content-center">
-        <img href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" width="30" height="24" src="wwwroot/files/ie.png" />
-        <span class="mb-3 mb-md-0 text-muted">Intelligent Environments 2023 (IE’23)</span>
+            <img href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" width="30" height="24"
+                src="wwwroot/files/ie.png" />
+            <span class="mb-3 mb-md-0 text-muted">Intelligent Environments 2023 (IE’23)</span>
         </div>
 
         <ul class="nav col-xs-6 list-unstyled d-flex justify-content-center">
-        <li class="ms-3"><a class="text-muted" href="https://twitter.com/ie_forum"><i class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/IntelligentEnvironments/"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/groups/2578102/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://twitter.com/ie_forum"><i
+                        class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/IntelligentEnvironments/"><i
+                        class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/groups/2578102/"><i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a></li>
         </ul>
-    <div>
+        <div>
 </footer>
 
 </html>
