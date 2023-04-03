@@ -3,6 +3,132 @@ AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Hotels in Flic en Flac</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <style>
+      #map {
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // initialize the map
+      var map = L.map('map').setView([-20.2862, 57.363], 14);
+
+      // add the OpenStreetMap tile layer
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+        maxZoom: 18,
+      }).addTo(map);
+
+      // add the hotel markers
+      var hotels = [
+        {
+          name: 'Hilton Mauritius Resort & Spa',
+          location: [-20.298, 57.365],
+          description: 'Luxury resort with beach access',
+        },
+        {
+          name: 'Sands Suites Resort & Spa',
+          location: [-20.285, 57.346],
+          description: 'Beachfront resort with multiple dining options',
+        },
+        {
+          name: 'Sugar Beach Golf & Spa Resort',
+          location: [-20.309, 57.389],
+          description: 'Family-friendly resort with golf course',
+        },
+      ];
+
+      // create a custom icon for the highlighted marker
+      var highlightedIcon = L.icon({
+        iconUrl: 'https://cdn.jsdelivr.net/leaflet/1.7.1/images/marker-icon-red.png',
+        iconRetinaUrl: 'https://cdn.jsdelivr.net/leaflet/1.7.1/images/marker-icon-2x-red.png',
+        shadowUrl: 'https://cdn.jsdelivr.net/leaflet/1.7.1/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [0, -41],
+        shadowSize: [41, 41],
+      });
+
+      hotels.forEach(function(hotel, index) {
+        var marker = L.marker(hotel.location).bindPopup('<b>' + hotel.name + '</b><br>' + hotel.description);
+
+        if (index === 0) { // if it's the first hotel in the array, highlight the marker
+          marker.setIcon(highlightedIcon);
+        }
+
+        marker.addTo(map);
+      });
+    </script>
+  </body>
+</html>
+
+
+<!--DOCTYPE html>
+<html>
+  <head>
+    <title>Nearby Hotels in Flic en Flac, Mauritius</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css">
+    <style>
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      const map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([57.377 , -20.281549996910442]),
+          zoom: 15
+        })
+      });
+
+      // Search for nearby hotels
+      const url = 'https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&q=lodging&limit=10&email=intelligentenvironments@gmail.com&polygon_geojson=1&viewbox=' +
+      [57.357437, -20.276707, 57.375946, -20.266758].join(',');
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(result => {
+            const feature = new ol.Feature({
+              geometry: new ol.geom.Point(ol.proj.fromLonLat([parseFloat(result.lon), parseFloat(result.lat)]))
+            });
+            const layer = new ol.layer.Vector({
+              source: new ol.source.Vector({
+                features: [feature]
+              }),
+              style: new ol.style.Style({
+                image: new ol.style.Icon({
+                  src: 'https://cdn3.iconfinder.com/data/icons/hotel-amenities-outline/64/Hotel-Icon-64.png',
+                  scale: 0.05
+                })
+              })
+            });
+            map.addLayer(layer);
+          });
+        });
+    </script>
+  </body>
+</html-->
+
+
+<!--DOCTYPE html>
+<html>
+  <head>
     <title>Nearby Hotels in Flic en Flac, Mauritius</title>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places"
@@ -59,4 +185,4 @@ AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"></script>
   </body>
-</html>
+</html-->
