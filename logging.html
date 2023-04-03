@@ -1,0 +1,62 @@
+AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nearby Hotels in Flic en Flac, Mauritius</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places"
+      async
+    ></script>
+    <style>
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // Initialize the map
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: -20.271454, lng: 57.366127 },
+          zoom: 15,
+        });
+        
+        // Search for nearby hotels
+        const request = {
+          location: map.getCenter(),
+          radius: "500",
+          type: ["lodging"],
+        };
+
+        const service = new google.maps.places.PlacesService(map);
+        service.nearbySearch(request, (results, status) => {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (let i = 0; i < results.length; i++) {
+              createMarker(results[i]);
+            }
+          }
+        });
+      }
+
+      // Create a marker for each hotel
+      function createMarker(place) {
+        const marker = new google.maps.Marker({
+          map,
+          position: place.geometry.location,
+        });
+
+        // Add a click listener to the marker to display the hotel name
+        const infowindow = new google.maps.InfoWindow({
+          content: place.name,
+        });
+        marker.addListener("click", () => {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"></script>
+  </body>
+</html>
