@@ -24,6 +24,18 @@ p {
     color: #757575;
 }
 
+.tbl_info {
+background-color: #edf1f9;
+}
+
+.tbl_break {
+    background-color:#d9e2f3
+}
+
+.time {
+    background-color:#b4c6e7;
+}
+
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
