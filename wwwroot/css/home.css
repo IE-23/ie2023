@@ -36,6 +36,17 @@ background-color: #edf1f9;
     background-color:#b4c6e7;
 }
 
+tr.darker td:nth-child(3) {
+    border-right: 2.5px solid #555;
+  }
+
+  tr.dark td:nth-child(2) {
+    border-right: 2.5px solid #555;
+  }
+  tr.dark1 td:nth-child(1) {
+    border-right: 2.5px solid #555;
+  }
+
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
